@@ -1,0 +1,30 @@
+.container ul li:first-child{
+  color: red;
+}
+
+.container ul li:not(:last-child){
+  padding: 13px;
+}
+
+.container ul li:nth-child(even){
+  background: blue;
+}
+
+.container ul li:nth-child(3n){
+  list-style-type: square;
+}
+
+.container ul li:nth-child(5){
+  color: orange;
+}
+
+.container ul li:nth-child(6):hover + li{
+  background: orange;
+}
+
+.container ul li:first-child:nth-last-child(n + 8) ~ li {
+  background: green;
+  color: white;
+  padding: 10px;
+  border: 1px solid white;
+}
